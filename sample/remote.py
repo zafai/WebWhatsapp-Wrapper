@@ -11,7 +11,7 @@ except KeyError:
 
 driver = WhatsAPIDriver(client='remote', command_executor=os.environ["SELENIUM"])
 print("Waiting for QR")
-driver.get_qr('/pic/qr-code.jpg')
+driver.get_qr('/pic/qr-code.png')
 driver.wait_for_login()
 print("Bot started")
 
